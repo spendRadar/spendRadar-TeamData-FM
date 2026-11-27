@@ -1,0 +1,5 @@
+pandas>=2.2
+numpy
+scipy           # Wilcoxon 검정
+matplotlib      # 그림
+openpyxl        # 결과 엑셀
