@@ -1,13 +1,8 @@
-# 분석 중간 결과 (scripts/1~3단계가 다시 만듦)
-scripts/out/
-
 # 원본 엑셀 (개인 금융 정보) — 결과 엑셀만 예외
 *.xlsx
 !results/SpendRadar_TeamData_results.xlsx
 
-# Python / Node
+# Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-node_modules/
-package-lock.json
