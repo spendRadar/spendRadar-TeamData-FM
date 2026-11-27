@@ -8,7 +8,7 @@ team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2025-03-01,260200,train
 team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2025-04-01,304000,train
 team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2025-05-01,271900,train
 team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2025-06-01,518800,train
-team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2025-07-01,189650,train
+team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2025-07-01,188650,train
 team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2025-08-01,454800,train
 team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2025-09-01,346620,train
 team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2025-10-01,384600,train
@@ -19,11 +19,11 @@ team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-02-01,451350,train
 team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-03-01,204750,train
 team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-04-01,256950,train
 team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-05-01,305200,test
-team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-06-01,644540,test
-team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-07-01,412040,test
-team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-08-01,466400,test
-team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-09-01,740898,test
-team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-10-01,281100,test
+team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-06-01,413550,test
+team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-07-01,396140,test
+team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-08-01,330500,test
+team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-09-01,694400,test
+team,team_U1_식비 / 카페,U1,식비 / 카페,M,KRW,2026-10-01,261100,test
 team,team_U1_주거 / 통신,U1,주거 / 통신,M,KRW,2024-10-01,0,train
 team,team_U1_주거 / 통신,U1,주거 / 통신,M,KRW,2024-11-01,0,train
 team,team_U1_주거 / 통신,U1,주거 / 통신,M,KRW,2024-12-01,0,train
@@ -61,7 +61,7 @@ team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2025-06-01,19600,train
 team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2025-07-01,0,train
 team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2025-08-01,29000,train
 team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2025-09-01,30100,train
-team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2025-10-01,23500,train
+team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2025-10-01,21500,train
 team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2025-11-01,9900,train
 team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2025-12-01,0,train
 team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-01-01,0,train
@@ -69,36 +69,11 @@ team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-02-01,284600,train
 team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-03-01,0,train
 team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-04-01,0,train
 team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-05-01,39000,test
-team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-06-01,86125,test
-team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-07-01,296600,test
-team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-08-01,296412,test
-team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-09-01,459280,test
-team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-10-01,404883,test
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2024-10-01,126027,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2024-11-01,0,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2024-12-01,268600,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-01-01,278800,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-02-01,447150,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-03-01,826250,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-04-01,564545,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-05-01,869708,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-06-01,663850,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-07-01,279830,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-08-01,926827,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-09-01,170240,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-10-01,743600,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-11-01,371800,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2025-12-01,242380,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-01-01,701468,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-02-01,1918510,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-03-01,370050,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-04-01,301300,train
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-05-01,842900,test
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-06-01,1083430,test
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-07-01,1532650,test
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-08-01,872000,test
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-09-01,568500,test
-team,team_U1_의료 및 기타,U1,의료 및 기타,M,KRW,2026-10-01,407275,test
+team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-06-01,50600,test
+team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-07-01,0,test
+team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-08-01,18790,test
+team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-09-01,15780,test
+team,team_U1_쇼핑 / 패션,U1,쇼핑 / 패션,M,KRW,2026-10-01,14900,test
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2024-10-01,38100,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2024-11-01,0,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2024-12-01,72000,train
@@ -111,7 +86,7 @@ team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2025-06-01,0,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2025-07-01,64710,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2025-08-01,84900,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2025-09-01,47500,train
-team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2025-10-01,68000,train
+team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2025-10-01,58000,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2025-11-01,19600,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2025-12-01,72500,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-01-01,32500,train
@@ -119,11 +94,11 @@ team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-02-01,185020,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-03-01,41900,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-04-01,26800,train
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-05-01,52500,test
-team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-06-01,272900,test
+team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-06-01,152900,test
 team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-07-01,0,test
-team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-08-01,70000,test
-team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-09-01,80000,test
-team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-10-01,10000,test
+team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-08-01,0,test
+team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-09-01,0,test
+team,team_U1_교통 / 차량,U1,교통 / 차량,M,KRW,2026-10-01,0,test
 team,team_U1_문화 / 여가,U1,문화 / 여가,M,KRW,2024-10-01,84500,train
 team,team_U1_문화 / 여가,U1,문화 / 여가,M,KRW,2024-11-01,70034,train
 team,team_U1_문화 / 여가,U1,문화 / 여가,M,KRW,2024-12-01,141583,train
@@ -149,6 +124,56 @@ team,team_U1_문화 / 여가,U1,문화 / 여가,M,KRW,2026-07-01,20000,test
 team,team_U1_문화 / 여가,U1,문화 / 여가,M,KRW,2026-08-01,14000,test
 team,team_U1_문화 / 여가,U1,문화 / 여가,M,KRW,2026-09-01,5000,test
 team,team_U1_문화 / 여가,U1,문화 / 여가,M,KRW,2026-10-01,0,test
+team,team_U1_의료,U1,의료,M,KRW,2024-10-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2024-11-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2024-12-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2025-01-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2025-02-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2025-03-01,3000,train
+team,team_U1_의료,U1,의료,M,KRW,2025-04-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2025-05-01,27500,train
+team,team_U1_의료,U1,의료,M,KRW,2025-06-01,20400,train
+team,team_U1_의료,U1,의료,M,KRW,2025-07-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2025-08-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2025-09-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2025-10-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2025-11-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2025-12-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2026-01-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2026-02-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2026-03-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2026-04-01,0,train
+team,team_U1_의료,U1,의료,M,KRW,2026-05-01,0,test
+team,team_U1_의료,U1,의료,M,KRW,2026-06-01,0,test
+team,team_U1_의료,U1,의료,M,KRW,2026-07-01,0,test
+team,team_U1_의료,U1,의료,M,KRW,2026-08-01,0,test
+team,team_U1_의료,U1,의료,M,KRW,2026-09-01,0,test
+team,team_U1_의료,U1,의료,M,KRW,2026-10-01,0,test
+team,team_U1_전체,U1,전체,M,KRW,2024-10-01,870817,train
+team,team_U1_전체,U1,전체,M,KRW,2024-11-01,79534,train
+team,team_U1_전체,U1,전체,M,KRW,2024-12-01,714783,train
+team,team_U1_전체,U1,전체,M,KRW,2025-01-01,978940,train
+team,team_U1_전체,U1,전체,M,KRW,2025-02-01,529457,train
+team,team_U1_전체,U1,전체,M,KRW,2025-03-01,301110,train
+team,team_U1_전체,U1,전체,M,KRW,2025-04-01,797600,train
+team,team_U1_전체,U1,전체,M,KRW,2025-05-01,549421,train
+team,team_U1_전체,U1,전체,M,KRW,2025-06-01,567800,train
+team,team_U1_전체,U1,전체,M,KRW,2025-07-01,253360,train
+team,team_U1_전체,U1,전체,M,KRW,2025-08-01,587756,train
+team,team_U1_전체,U1,전체,M,KRW,2025-09-01,424220,train
+team,team_U1_전체,U1,전체,M,KRW,2025-10-01,464100,train
+team,team_U1_전체,U1,전체,M,KRW,2025-11-01,324400,train
+team,team_U1_전체,U1,전체,M,KRW,2025-12-01,353100,train
+team,team_U1_전체,U1,전체,M,KRW,2026-01-01,474080,train
+team,team_U1_전체,U1,전체,M,KRW,2026-02-01,920970,train
+team,team_U1_전체,U1,전체,M,KRW,2026-03-01,252150,train
+team,team_U1_전체,U1,전체,M,KRW,2026-04-01,283750,train
+team,team_U1_전체,U1,전체,M,KRW,2026-05-01,396700,test
+team,team_U1_전체,U1,전체,M,KRW,2026-06-01,617050,test
+team,team_U1_전체,U1,전체,M,KRW,2026-07-01,416140,test
+team,team_U1_전체,U1,전체,M,KRW,2026-08-01,363290,test
+team,team_U1_전체,U1,전체,M,KRW,2026-09-01,715180,test
+team,team_U1_전체,U1,전체,M,KRW,2026-10-01,276000,test
 team,team_U2_식비 / 카페,U2,식비 / 카페,M,KRW,2024-01-01,204085,train
 team,team_U2_식비 / 카페,U2,식비 / 카페,M,KRW,2024-02-01,236110,train
 team,team_U2_식비 / 카페,U2,식비 / 카페,M,KRW,2024-03-01,187400,train
@@ -251,40 +276,6 @@ team,team_U2_쇼핑 / 패션,U2,쇼핑 / 패션,M,KRW,2026-07-01,66650,test
 team,team_U2_쇼핑 / 패션,U2,쇼핑 / 패션,M,KRW,2026-08-01,164362,test
 team,team_U2_쇼핑 / 패션,U2,쇼핑 / 패션,M,KRW,2026-09-01,71860,test
 team,team_U2_쇼핑 / 패션,U2,쇼핑 / 패션,M,KRW,2026-10-01,494178,test
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-01-01,39638,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-02-01,40144,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-03-01,61500,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-04-01,93350,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-05-01,61000,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-06-01,2520,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-07-01,82900,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-08-01,4550,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-09-01,456840,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-10-01,777300,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-11-01,61633,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2024-12-01,103400,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-01-01,117380,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-02-01,461840,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-03-01,209226,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-04-01,131121,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-05-01,303740,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-06-01,477637,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-07-01,231502,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-08-01,832300,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-09-01,385440,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-10-01,64493,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-11-01,107721,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2025-12-01,140609,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-01-01,92381,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-02-01,108833,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-03-01,159711,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-04-01,128875,train
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-05-01,447391,test
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-06-01,244329,test
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-07-01,208294,test
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-08-01,596265,test
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-09-01,273263,test
-team,team_U2_의료 및 기타,U2,의료 및 기타,M,KRW,2026-10-01,121065,test
 team,team_U2_교통 / 차량,U2,교통 / 차량,M,KRW,2024-01-01,5815,train
 team,team_U2_교통 / 차량,U2,교통 / 차량,M,KRW,2024-02-01,6512,train
 team,team_U2_교통 / 차량,U2,교통 / 차량,M,KRW,2024-03-01,6492,train
@@ -353,148 +344,74 @@ team,team_U2_문화 / 여가,U2,문화 / 여가,M,KRW,2026-07-01,155950,test
 team,team_U2_문화 / 여가,U2,문화 / 여가,M,KRW,2026-08-01,15900,test
 team,team_U2_문화 / 여가,U2,문화 / 여가,M,KRW,2026-09-01,105130,test
 team,team_U2_문화 / 여가,U2,문화 / 여가,M,KRW,2026-10-01,109925,test
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-01-01,215400,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-02-01,198000,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-03-01,245600,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-04-01,210000,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-05-01,268500,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-06-01,225000,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-07-01,240000,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-08-01,255000,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-09-01,218000,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-10-01,232000,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-11-01,205000,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2025-12-01,289000,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-01-01,0,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-02-01,0,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-03-01,6400,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-04-01,0,train
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-05-01,0,test
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-06-01,0,test
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-07-01,0,test
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-08-01,0,test
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-09-01,0,test
-team,team_U3_식비 / 카페,U3,식비 / 카페,M,KRW,2026-10-01,0,test
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-01-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-02-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-03-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-04-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-05-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-06-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-07-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-08-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-09-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-10-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-11-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2025-12-01,85000,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-01-01,24990,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-02-01,24990,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-03-01,24990,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-04-01,25090,train
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-05-01,24990,test
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-06-01,24990,test
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-07-01,26090,test
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-08-01,25486,test
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-09-01,26124,test
-team,team_U3_주거 / 통신,U3,주거 / 통신,M,KRW,2026-10-01,26088,test
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-01-01,124500,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-02-01,89000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-03-01,156000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-04-01,98000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-05-01,210000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-06-01,135000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-07-01,178000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-08-01,195000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-09-01,112000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-10-01,145000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-11-01,108000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2025-12-01,250000,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-01-01,0,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-02-01,0,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-03-01,0,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-04-01,0,train
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-05-01,0,test
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-06-01,8770,test
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-07-01,0,test
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-08-01,0,test
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-09-01,0,test
-team,team_U3_쇼핑 / 패션,U3,쇼핑 / 패션,M,KRW,2026-10-01,0,test
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-01-01,107500,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-02-01,62000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-03-01,145000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-04-01,78000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-05-01,163000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-06-01,88000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-07-01,152000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-08-01,160000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-09-01,107000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-10-01,105000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-11-01,83000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2025-12-01,255000,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-01-01,70390,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-02-01,1200,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-03-01,81100,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-04-01,297800,train
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-05-01,101100,test
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-06-01,158500,test
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-07-01,12350,test
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-08-01,17900,test
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-09-01,75000,test
-team,team_U3_의료 및 기타,U3,의료 및 기타,M,KRW,2026-10-01,3380616,test
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-01-01,45200,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-02-01,38000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-03-01,52000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-04-01,41500,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-05-01,48000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-06-01,43000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-07-01,50000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-08-01,47000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-09-01,44000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-10-01,46000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-11-01,42000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2025-12-01,55000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-01-01,0,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-02-01,10100,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-03-01,25000,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-04-01,0,train
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-05-01,0,test
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-06-01,0,test
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-07-01,0,test
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-08-01,0,test
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-09-01,0,test
-team,team_U3_교통 / 차량,U3,교통 / 차량,M,KRW,2026-10-01,0,test
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-01-01,18000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-02-01,25000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-03-01,42000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-04-01,15000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-05-01,65000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-06-01,30000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-07-01,85000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-08-01,92000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-09-01,28000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-10-01,40000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-11-01,20000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2025-12-01,110000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-01-01,0,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-02-01,0,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-03-01,8000,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-04-01,0,train
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-05-01,0,test
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-06-01,3000,test
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-07-01,0,test
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-08-01,9400,test
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-09-01,0,test
-team,team_U3_문화 / 여가,U3,문화 / 여가,M,KRW,2026-10-01,3000,test
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-01-01,250403,train
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-02-01,42672,train
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-03-01,0,train
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-04-01,28090,train
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-05-01,0,train
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-06-01,0,train
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-07-01,0,train
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-08-01,38599,train
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-09-01,85500,train
-team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-10-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2024-01-01,13000,train
+team,team_U2_의료,U2,의료,M,KRW,2024-02-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2024-03-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2024-04-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2024-05-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2024-06-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2024-07-01,71900,train
+team,team_U2_의료,U2,의료,M,KRW,2024-08-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2024-09-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2024-10-01,94900,train
+team,team_U2_의료,U2,의료,M,KRW,2024-11-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2024-12-01,9000,train
+team,team_U2_의료,U2,의료,M,KRW,2025-01-01,10000,train
+team,team_U2_의료,U2,의료,M,KRW,2025-02-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2025-03-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2025-04-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2025-05-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2025-06-01,165000,train
+team,team_U2_의료,U2,의료,M,KRW,2025-07-01,6000,train
+team,team_U2_의료,U2,의료,M,KRW,2025-08-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2025-09-01,311792,train
+team,team_U2_의료,U2,의료,M,KRW,2025-10-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2025-11-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2025-12-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2026-01-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2026-02-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2026-03-01,7500,train
+team,team_U2_의료,U2,의료,M,KRW,2026-04-01,0,train
+team,team_U2_의료,U2,의료,M,KRW,2026-05-01,154700,test
+team,team_U2_의료,U2,의료,M,KRW,2026-06-01,0,test
+team,team_U2_의료,U2,의료,M,KRW,2026-07-01,0,test
+team,team_U2_의료,U2,의료,M,KRW,2026-08-01,0,test
+team,team_U2_의료,U2,의료,M,KRW,2026-09-01,163589,test
+team,team_U2_의료,U2,의료,M,KRW,2026-10-01,0,test
+team,team_U2_전체,U2,전체,M,KRW,2024-01-01,327330,train
+team,team_U2_전체,U2,전체,M,KRW,2024-02-01,355192,train
+team,team_U2_전체,U2,전체,M,KRW,2024-03-01,655956,train
+team,team_U2_전체,U2,전체,M,KRW,2024-04-01,443166,train
+team,team_U2_전체,U2,전체,M,KRW,2024-05-01,290704,train
+team,team_U2_전체,U2,전체,M,KRW,2024-06-01,484157,train
+team,team_U2_전체,U2,전체,M,KRW,2024-07-01,583599,train
+team,team_U2_전체,U2,전체,M,KRW,2024-08-01,388904,train
+team,team_U2_전체,U2,전체,M,KRW,2024-09-01,459257,train
+team,team_U2_전체,U2,전체,M,KRW,2024-10-01,1847798,train
+team,team_U2_전체,U2,전체,M,KRW,2024-11-01,5508504,train
+team,team_U2_전체,U2,전체,M,KRW,2024-12-01,611204,train
+team,team_U2_전체,U2,전체,M,KRW,2025-01-01,360385,train
+team,team_U2_전체,U2,전체,M,KRW,2025-02-01,333915,train
+team,team_U2_전체,U2,전체,M,KRW,2025-03-01,819591,train
+team,team_U2_전체,U2,전체,M,KRW,2025-04-01,265935,train
+team,team_U2_전체,U2,전체,M,KRW,2025-05-01,365169,train
+team,team_U2_전체,U2,전체,M,KRW,2025-06-01,632184,train
+team,team_U2_전체,U2,전체,M,KRW,2025-07-01,531985,train
+team,team_U2_전체,U2,전체,M,KRW,2025-08-01,594885,train
+team,team_U2_전체,U2,전체,M,KRW,2025-09-01,723045,train
+team,team_U2_전체,U2,전체,M,KRW,2025-10-01,703552,train
+team,team_U2_전체,U2,전체,M,KRW,2025-11-01,431167,train
+team,team_U2_전체,U2,전체,M,KRW,2025-12-01,380915,train
+team,team_U2_전체,U2,전체,M,KRW,2026-01-01,552595,train
+team,team_U2_전체,U2,전체,M,KRW,2026-02-01,671845,train
+team,team_U2_전체,U2,전체,M,KRW,2026-03-01,916910,train
+team,team_U2_전체,U2,전체,M,KRW,2026-04-01,476390,train
+team,team_U2_전체,U2,전체,M,KRW,2026-05-01,546940,test
+team,team_U2_전체,U2,전체,M,KRW,2026-06-01,735900,test
+team,team_U2_전체,U2,전체,M,KRW,2026-07-01,648050,test
+team,team_U2_전체,U2,전체,M,KRW,2026-08-01,624742,test
+team,team_U2_전체,U2,전체,M,KRW,2026-09-01,777779,test
+team,team_U2_전체,U2,전체,M,KRW,2026-10-01,1235133,test
 team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-11-01,88800,train
 team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2024-12-01,296490,train
 team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2025-01-01,265800,train
@@ -519,16 +436,6 @@ team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2026-07-01,60200,test
 team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2026-08-01,182050,test
 team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2026-09-01,268350,test
 team,team_U4_식비 / 카페,U4,식비 / 카페,M,KRW,2026-10-01,324800,test
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-01-01,93790,train
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-02-01,247196,train
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-03-01,34990,train
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-04-01,138492,train
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-05-01,331720,train
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-06-01,36500,train
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-07-01,638399,train
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-08-01,316976,train
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-09-01,49800,train
-team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-10-01,0,train
 team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-11-01,130000,train
 team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2024-12-01,116790,train
 team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2025-01-01,355280,train
@@ -553,16 +460,6 @@ team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2026-07-01,559158,test
 team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2026-08-01,169170,test
 team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2026-09-01,124663,test
 team,team_U4_주거 / 통신,U4,주거 / 통신,M,KRW,2026-10-01,114860,test
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-01-01,17990,train
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-02-01,11990,train
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-03-01,11990,train
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-04-01,0,train
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-05-01,0,train
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-06-01,0,train
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-07-01,0,train
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-08-01,140173,train
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-09-01,117000,train
-team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-10-01,0,train
 team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-11-01,152228,train
 team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2024-12-01,302939,train
 team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2025-01-01,306792,train
@@ -587,50 +484,6 @@ team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2026-07-01,188838,test
 team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2026-08-01,130433,test
 team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2026-09-01,331444,test
 team,team_U4_쇼핑 / 패션,U4,쇼핑 / 패션,M,KRW,2026-10-01,446405,test
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-01-01,5027701,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-02-01,0,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-03-01,2046623,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-04-01,41502,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-05-01,71000,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-06-01,0,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-07-01,183358,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-08-01,422741,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-09-01,1214704,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-10-01,177000,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-11-01,2344682,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2024-12-01,947048,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-01-01,6262177,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-02-01,2707558,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-03-01,662920,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-04-01,2081604,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-05-01,516000,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-06-01,628759,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-07-01,869477,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-08-01,1860056,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-09-01,715720,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-10-01,2162800,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-11-01,1526103,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2025-12-01,1317550,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-01-01,830750,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-02-01,6211850,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-03-01,139608,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-04-01,181377,train
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-05-01,5439089,test
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-06-01,238919,test
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-07-01,2120440,test
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-08-01,257700,test
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-09-01,142200,test
-team,team_U4_의료 및 기타,U4,의료 및 기타,M,KRW,2026-10-01,257260,test
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-01-01,0,train
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-02-01,22410,train
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-03-01,0,train
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-04-01,0,train
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-05-01,0,train
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-06-01,0,train
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-07-01,0,train
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-08-01,10189,train
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-09-01,0,train
-team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-10-01,112669,train
 team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-11-01,162080,train
 team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2024-12-01,0,train
 team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2025-01-01,55000,train
@@ -655,16 +508,6 @@ team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2026-07-01,30050,test
 team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2026-08-01,14240,test
 team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2026-09-01,38600,test
 team,team_U4_교통 / 차량,U4,교통 / 차량,M,KRW,2026-10-01,41000,test
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-01-01,16000,train
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-02-01,0,train
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-03-01,0,train
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-04-01,0,train
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-05-01,0,train
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-06-01,0,train
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-07-01,0,train
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-08-01,0,train
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-09-01,22000,train
-team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-10-01,0,train
 team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-11-01,35000,train
 team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2024-12-01,38500,train
 team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2025-01-01,47000,train
@@ -689,3 +532,51 @@ team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2026-07-01,122200,test
 team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2026-08-01,98000,test
 team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2026-09-01,227100,test
 team,team_U4_문화 / 여가,U4,문화 / 여가,M,KRW,2026-10-01,64500,test
+team,team_U4_의료,U4,의료,M,KRW,2024-11-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2024-12-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-01-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-02-01,2000,train
+team,team_U4_의료,U4,의료,M,KRW,2025-03-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-04-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-05-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-06-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-07-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-08-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-09-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-10-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-11-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2025-12-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2026-01-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2026-02-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2026-03-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2026-04-01,0,train
+team,team_U4_의료,U4,의료,M,KRW,2026-05-01,0,test
+team,team_U4_의료,U4,의료,M,KRW,2026-06-01,0,test
+team,team_U4_의료,U4,의료,M,KRW,2026-07-01,0,test
+team,team_U4_의료,U4,의료,M,KRW,2026-08-01,0,test
+team,team_U4_의료,U4,의료,M,KRW,2026-09-01,0,test
+team,team_U4_의료,U4,의료,M,KRW,2026-10-01,0,test
+team,team_U4_전체,U4,전체,M,KRW,2024-11-01,568108,train
+team,team_U4_전체,U4,전체,M,KRW,2024-12-01,754719,train
+team,team_U4_전체,U4,전체,M,KRW,2025-01-01,1029872,train
+team,team_U4_전체,U4,전체,M,KRW,2025-02-01,1800587,train
+team,team_U4_전체,U4,전체,M,KRW,2025-03-01,1291156,train
+team,team_U4_전체,U4,전체,M,KRW,2025-04-01,573749,train
+team,team_U4_전체,U4,전체,M,KRW,2025-05-01,899233,train
+team,team_U4_전체,U4,전체,M,KRW,2025-06-01,916177,train
+team,team_U4_전체,U4,전체,M,KRW,2025-07-01,1298129,train
+team,team_U4_전체,U4,전체,M,KRW,2025-08-01,1265106,train
+team,team_U4_전체,U4,전체,M,KRW,2025-09-01,773518,train
+team,team_U4_전체,U4,전체,M,KRW,2025-10-01,759904,train
+team,team_U4_전체,U4,전체,M,KRW,2025-11-01,722620,train
+team,team_U4_전체,U4,전체,M,KRW,2025-12-01,977056,train
+team,team_U4_전체,U4,전체,M,KRW,2026-01-01,1115482,train
+team,team_U4_전체,U4,전체,M,KRW,2026-02-01,902639,train
+team,team_U4_전체,U4,전체,M,KRW,2026-03-01,563201,train
+team,team_U4_전체,U4,전체,M,KRW,2026-04-01,1219192,train
+team,team_U4_전체,U4,전체,M,KRW,2026-05-01,1157376,test
+team,team_U4_전체,U4,전체,M,KRW,2026-06-01,747274,test
+team,team_U4_전체,U4,전체,M,KRW,2026-07-01,960446,test
+team,team_U4_전체,U4,전체,M,KRW,2026-08-01,593893,test
+team,team_U4_전체,U4,전체,M,KRW,2026-09-01,990157,test
+team,team_U4_전체,U4,전체,M,KRW,2026-10-01,991565,test
