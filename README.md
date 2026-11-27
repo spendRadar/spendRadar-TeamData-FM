@@ -3,7 +3,7 @@
 SpendRadar(가천대 AI P-실무프로젝트) 지출 예측에 쓸 모델을 **팀원 4명의 실제 지출**로 검증한 **시계열 파운데이션 모델 4종 zero-shot 평가** 코드·결과·보고서.
 사용자별 카테고리 6개의 월 지출로 마지막 6개월(2026-05 ~ 2026-10)을 **재귀 방식**(1개월씩 6번)으로 예측하고 MAE·MASE·WQL을 Baseline 8가지와 비교함. 같은 방식으로 향후 6개월(2026-11 ~ 2027-04)도 예측함.
 
-- 데이터셋·Baseline: [spendRadar-TeamData-Baseline](https://github.com/spendRadar/spendRadar-TeamData-Baseline)
+- 데이터셋·Baseline: [spendRadar-TeamData-Baseline](https://github.com/terrio458/spendRadar-TeamData-Baseline)
 - TabFormer 합성 데이터 평가: [spendRadar-Dataset-FM](https://github.com/spendRadar/spendRadar-Dataset-FM) — 이 레포는 그 README의 "팀원 가계부로 추가 검증"에 해당함
 - 두 레포(TeamData-Baseline · TeamData-FM)는 같은 데이터(`data/team_monthly_long.csv`)와 같은 계산 코드(`src/spendradar_team.py`)를 사용함
 
@@ -24,7 +24,7 @@ SpendRadar(가천대 AI P-실무프로젝트) 지출 예측에 쓸 모델을 **�
 ## 2. 데이터
 - 팀원 4명(익명 ID U1 ~ U4) × 카테고리 6개(식비 / 카페, 주거 / 통신, 쇼핑 / 패션, 의료 및 기타, 교통 / 차량, 문화 / 여가) 월 지출(원), 사용자별 22 ~ 34개월
 - 검증(test) 2026-05 ~ 2026-10, 평가 시계열 23개 (U1은 주거 / 통신 지출 없음)
-- 원본 엑셀은 개인 금융 정보라 올리지 않음. 전처리 방법·통계는 [Baseline 레포](https://github.com/spendRadar/spendRadar-TeamData-Baseline) README 참고
+- 원본 엑셀은 개인 금융 정보라 올리지 않음. 전처리 방법·통계는 [Baseline 레포](https://github.com/terrio458/spendRadar-TeamData-Baseline) README 참고
 
 ## 3. 결과 (Baseline 포함, 검증 6개월, 4명 종합, 낮을수록 좋음)
 | 순위 (MAE) | 모델 | 구분 | MAE 합계 (원/월) | MASE 평균 | WQL 평균 | 10 ~ 90% 범위 적중률 |
