@@ -45,7 +45,7 @@ plt.tight_layout(); plt.savefig(FIG / "1_모델별_MAE_WQL.png", dpi=170); plt.c
 fig, a = plt.subplots(figsize=(10, 4.6))
 cov = ov["10~90% 적중률"] * 100
 a.bar(range(len(ov)), cov, color=c, width=0.7)
-a.axhline(80, color=INK, lw=1, ls="--"); a.text(len(ov) - 0.5, 81, "목표 80%", ha="right", fontsize=8, color=INK)
+a.axhline(80, color=INK, lw=1, ls="--"); a.text(-0.4, 101, "점선 = 목표 80%", ha="left", va="top", fontsize=8.5, color=INK)
 for x, v in enumerate(cov): a.text(x, v + 1, f"{v:.0f}%", ha="center", fontsize=8, color=INK)
 a.set_xticks(range(len(ov))); a.set_xticklabels(ov.index, rotation=35, ha="right", fontsize=8.5)
 a.set_ylim(0, 105); a.set_ylabel("%"); a.spines[["top", "right"]].set_visible(False); a.grid(axis="y", alpha=.25)

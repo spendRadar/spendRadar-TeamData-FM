@@ -45,14 +45,14 @@ ov["전체 시계열 MAE(원/월)"] = ent.groupby("모델")["MAE(원/월)"].mean
 ov["전체 시계열 WQL"] = ent.groupby("모델")["WQL"].mean()
 ov["최악 배율(사용자별 1위 MASE 대비)"] = (per / per.min()).max(axis=1)
 ov = ov.sort_values("MAE 합계(원/월)"); ov.insert(1, "MAE 순위", range(1, len(ov) + 1)); ov.index.name = "모델"
-ov.round(4).to_csv(RES / "comparison_overall.csv", encoding="utf-8-sig")
+ov.round(6).to_csv(RES / "comparison_overall.csv", encoding="utf-8-sig")
 
 byu = tot.set_index(["모델", "사용자"])[["MAE(원/월)", "MASE", "WQL", "예상범위 적중률"]].unstack("사용자")
 byu.columns = [f"{a}_{b}" for a, b in byu.columns]
-byu.loc[ov.index].round(4).to_csv(RES / "comparison_by_user.csv", encoding="utf-8-sig")
+byu.loc[ov.index].round(6).to_csv(RES / "comparison_by_user.csv", encoding="utf-8-sig")
 
 ser = M[~M.카테고리.isin(["종합", "전체"])].pivot_table(index=["사용자", "카테고리"], columns="모델", values="MASE")
-ser[ov.index].round(4).to_csv(RES / "comparison_by_series.csv", encoding="utf-8-sig")
+ser[ov.index].round(6).to_csv(RES / "comparison_by_series.csv", encoding="utf-8-sig")
 
 s = ser.dropna()
 rows = []
@@ -61,7 +61,7 @@ for f in FM:
         d = s[f] - s[b]
         rows.append({"파운데이션 모델": f, "비교 대상": b, "시계열 수": len(d), "승": int((d < 0).sum()), "패": int((d > 0).sum()),
                      "Wilcoxon p (FM이 더 좋음)": wilcoxon(d, alternative="less").pvalue})
-pd.DataFrame(rows).round(4).to_csv(RES / "comparison_tests.csv", index=False, encoding="utf-8-sig")
+pd.DataFrame(rows).round(6).to_csv(RES / "comparison_tests.csv", index=False, encoding="utf-8-sig")
 
 ft = F[F.카테고리 == "전체"].groupby(["모델", "사용자"])["예측"].sum().unstack()
 ft.loc[ov.index].round(0).astype(int).to_csv(RES / "comparison_forecast_total.csv", encoding="utf-8-sig")
