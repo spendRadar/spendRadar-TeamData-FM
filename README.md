@@ -3,7 +3,7 @@
 SpendRadar(가천대 AI P-실무프로젝트) 지출 예측에 쓸 모델을 **팀원의 실제 지출**로 검증하는 **시계열 파운데이션 모델 4종 zero-shot 평가** 코드·결과.
 사용자별 카테고리 6개 + 전체(월 총지출)의 마지막 6개월(2026-05 ~ 2026-10)을 **직접 방식**(입력 기간 전체를 보고 6개월을 한 번에 예측)으로 예측하고 MAE·MASE·WQL을 Baseline 4종과 비교함. 같은 방식으로 향후 6개월(2026-11 ~ 2027-04)도 예측함.
 
-> **⚠️ 결과 재실행 중 (2026-11-28)** — 팀 피드백에 따라 예측 방식을 직접 방식으로 통일하고 패키지 버전을 고정함. Baseline 결과는 반영 완료(`results/baseline/`), 파운데이션 모델 4종은 노트북으로 다시 실행 중이며 결과가 나오면 `results/`와 3장을 채움
+**결론: TimesFM 2.5가 종합 MAE · WQL 1위지만 HistQuantile과의 차이(MAE 3.2%)는 통계적으로 유의하지 않음(p = 0.14).** 팀원 데이터는 TabFormer 평가의 TimesFM 2.5 선정과 모순되지 않지만, 이 데이터만으로 "확실히 더 좋다"고 말할 수는 없음.
 
 - 데이터셋·Baseline: [spendRadar-TeamData-Baseline](https://github.com/spendRadar/spendRadar-TeamData-Baseline) (전처리·포함 조건·Baseline 상세)
 - TabFormer 합성 데이터 평가: [spendRadar-Dataset-FM](https://github.com/spendRadar/spendRadar-Dataset-FM) — 이 레포는 그 README의 "팀원 가계부로 추가 검증"에 해당함
@@ -29,14 +29,65 @@ SpendRadar(가천대 AI P-실무프로젝트) 지출 예측에 쓸 모델을 **�
 - 원본 엑셀은 개인 금융 정보라 올리지 않음. 전처리 규칙 · 사용자 포함 여부는 [Baseline 레포](https://github.com/spendRadar/spendRadar-TeamData-Baseline) README
 
 ## 3. 결과
-재실행 후 채움. 비교 기준이 될 Baseline 결과(직접 방식, 3명 종합, 낮을수록 좋음):
+### 종합 (검증 2026-05 ~ 2026-10, 3명, 낮을수록 좋음) — `results/comparison_overall.csv`
+| 순위 | 모델 | 구분 | MAE 합계 (원/월) | MASE 평균 | WQL 평균 | 10 ~ 90% 범위 적중률 |
+|---|---|---|---|---|---|---|
+| 1 | TimesFM 2.5 | 파운데이션 | 1,063,737 | 0.892 | **0.395** | 84% |
+| 2 | Chronos-2 | 파운데이션 | 1,078,826 | 0.877 | 0.412 | 81% |
+| 3 | HistQuantile | Baseline | 1,099,234 | 0.894 | 0.409 | 63% |
+| 4 | Moirai 2.0 | 파운데이션 | 1,126,824 | 0.934 | 0.408 | 75% |
+| 5 | FinCast | 파운데이션 | 1,155,447 | 0.819 | 0.445 | 89% |
+| 6 | 3개월 평균 | Baseline | 1,180,189 | 0.912 | 0.440 | 78% |
+| 7 | Naive | Baseline | 1,196,130 | **0.797** | 0.432 | 81% |
+| 8 | SeasonalNaive | Baseline | 1,314,950 | 1.210 | 0.495 | 74% |
 
-| 모델 | MAE 합계 (원/월) | MASE 평균 | WQL 평균 | 10 ~ 90% 범위 적중률 |
+![그림 1](report/figures/1_모델별_MAE_WQL.png)
+![그림 2](report/figures/2_모델별_예상범위_적중률.png)
+
+### 파운데이션 모델 vs Baseline (시계열 17개의 MASE, Wilcoxon 단측 검정) — `results/comparison_tests.csv`
+| 파운데이션 모델 | vs HistQuantile | vs Naive | vs 3개월 평균 | vs SeasonalNaive |
 |---|---|---|---|---|
-| HistQuantile | 1,099,234 | 0.894 | 0.409 | 63% |
-| 3개월 평균 | 1,180,189 | 0.912 | 0.440 | 78% |
-| Naive | 1,196,130 | 0.797 | 0.432 | 81% |
-| SeasonalNaive | 1,314,950 | 1.210 | 0.495 | 74% |
+| TimesFM 2.5 | 11승 6패, p = 0.142 | 8승 9패, p = 0.445 | 10승 7패, p = 0.274 | 11승 6패, p = 0.013 |
+| Chronos-2 | 10승 7패, p = 0.153 | 6승 11패, p = 0.726 | 10승 7패, p = 0.229 | 11승 6패, p = 0.028 |
+| Moirai 2.0 | 8승 9패, p = 0.785 | 8승 9패, p = 0.644 | 6승 11패, p = 0.811 | 11승 6패, p = 0.049 |
+| FinCast | 6승 9패, p = 0.633 | 7승 7패, p = 0.681 | 7승 9패, p = 0.582 | 11승 6패, p = 0.103 |
+
+- p < 0.05는 SeasonalNaive 대비 3개뿐이고, 검정 16개를 함께 보정(Bonferroni, 0.05 / 16 ≈ 0.003)하면 유의한 차이는 없음
+- 무승부(값이 같은 시계열)는 승패에서 빠짐
+
+### 해석
+- **TimesFM 2.5**: MAE 합계 · WQL 평균 1위, 범위 적중률 84%로 목표(80%)에 가까움. 다만 2위 Chronos-2와 MAE 1.4%, 3위 HistQuantile과 3.2% 차이로 근소하고 유의하지 않음
+- **사용자별 1위는 제각각**: MAE 기준 U1은 HistQuantile, U2는 Naive, U4는 Chronos-2 (`comparison_by_user.csv`). 시계열 17개의 MASE 1위도 8개 모델에 흩어짐(TimesFM 2.5는 2개, `comparison_by_series.csv`)
+- **Chronos-2**: TimesFM 2.5와 거의 같은 수준. 월 총지출('전체') MAE는 TimesFM 2.5보다 낮음(15.4만 vs 16.2만 원/월)
+- **Moirai 2.0**: TabFormer에서는 공동 1위였지만 여기서는 HistQuantile보다 MAE가 높음. U2 주거 / 통신을 크게 과대 예측(MASE 1.22)
+- **FinCast**: 범위 적중률은 가장 높지만(89%) 범위를 넓게 잡은 결과(U2 '전체' 하한 0원 등)이고 WQL은 파운데이션 모델 중 가장 나쁨
+- **HistQuantile**: 범위 적중률이 63%로 낮음 — 최근 12개월 분위수만 쓰므로 범위가 좁음
+- **MASE 평균은 Naive가 1위**: MASE 분모가 '지난달 값' 예측이라 Naive에 유리하고, 0원이 많은 '의료' 시계열 영향을 받음 → 금액 기준 판단은 MAE · WQL로 함
+
+### TabFormer 평가와 비교
+| | TabFormer (합성 데이터) | 팀원 데이터 (이 레포) |
+|---|---|---|
+| 1위 | Moirai 2.0 · TimesFM 2.5 공동 | TimesFM 2.5 (MAE · WQL) |
+| Chronos-2 | 3위, 상위와 차이 작음 | 2위, TimesFM 2.5와 차이 작음 |
+| HistQuantile | 최고 Baseline, 상위 3개보다 나쁨 | 최고 Baseline, TimesFM 2.5 · Chronos-2보다 나쁨(유의하지 않음) |
+| FinCast | HistQuantile보다 나쁨 | HistQuantile보다 나쁨 |
+| Moirai 2.0 | 공동 1위 | HistQuantile보다 나쁨 |
+
+→ TimesFM 2.5 선정과 같은 방향의 결과. 다만 표본이 작아(3명 · 시계열 17개 · 검증 1회) 근거는 약함
+
+### 향후 6개월 예측 (2026-11 ~ 2027-04, '전체' 시계열 합계, 원) — `results/comparison_forecast_total.csv`
+| 모델 | U1 | U2 | U4 |
+|---|---|---|---|
+| TimesFM 2.5 | 2,706,656 | 4,157,274 | 5,465,633 |
+| Chronos-2 | 2,644,600 | 4,262,288 | 5,439,408 |
+| HistQuantile | 2,279,970 | 3,818,376 | 5,812,506 |
+| Moirai 2.0 | 2,572,261 | 4,766,616 | 6,073,547 |
+| FinCast | 1,844,316 | 9,349,477 | 5,735,958 |
+
+- U2는 모델마다 차이가 큼: 마지막 달(2026-10) 지출이 124만 원으로 평소보다 높아 FinCast · Naive는 높게, HistQuantile은 낮게 예측
+- 실제 검증 구간 6개월 합계: U1 278만 · U2 457만 · U4 545만 원
+
+![그림 3](report/figures/3_월총지출_검증_TimesFM_vs_HistQuantile.png)
 
 ### 지표
 | 지표 | 정의 | 단위 |
@@ -60,6 +111,7 @@ scripts/
   1_compare.py                 8개 모델 비교 → results/comparison_*.csv
   2_charts.py                  비교 그림 → report/figures/
   3_build_results_xlsx.py      결과 엑셀 → results/SpendRadar_TeamData_results.xlsx
+report/figures/                 그림 1 ~ 3 (3장)
 results/
   <모델>/ALL_metrics_<모델>.csv      사용자 × 시계열 지표 (카테고리 '종합' = 카테고리 6개 기준 사용자 종합)
   <모델>/ALL_forecast_<모델>.csv     향후 6개월 예측 (중앙값 · 10% · 90%)
@@ -104,7 +156,8 @@ python scripts/3_build_results_xlsx.py
 
 ## 변경 이력
 - **2026-11-28** — 팀 피드백 반영
-  - 예측 방식: 직접(입력 기간 전체를 보고 6개월을 한 번에 예측)으로 통일 — Baseline과 같은 방식, 파운데이션 모델 재실행 중
+  - 예측 방식: 직접(입력 기간 전체를 보고 6개월을 한 번에 예측)으로 통일 — Baseline과 같은 방식, 파운데이션 모델 4종 재실행 · 결과 교체
   - 데이터: 포함 조건 명시(기록 기간 18개월 이상) → 3명, 송금 · '기타' 제외 → 카테고리 '의료 및 기타'를 '의료'로, '전체' 시계열 추가 (상세: Baseline 레포 변경 이력)
+  - 결과: TimesFM 2.5 종합 1위는 유지, 다만 HistQuantile과의 차이는 유의하지 않음(3장)
   - 패키지 버전 고정, 실행 환경 기록(`ENV_<모델>.csv`), 분석 코드 단순화(`scripts/1 ~ 3`)
 - 2026-11-27 — 첫 업로드 (4명, 카테고리 6개)

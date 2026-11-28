@@ -48,7 +48,7 @@ fig, a = plt.subplots(figsize=(9, 4.4))
 cov = ov["10~90% 적중률"] * 100
 a.bar(range(len(ov)), cov, color=c, width=0.7)
 a.axhline(80, color=INK, lw=1, ls="--"); a.text(-0.4, 101, "점선 = 목표 80%", ha="left", va="top", fontsize=8.5, color=INK)
-for x, v in enumerate(cov): a.text(x, v + 1, f"{v:.0f}%", ha="center", fontsize=8, color=INK)
+for x, v in enumerate(cov): a.text(x, v + 1, f"{v:.0f}%", ha="center", fontsize=8, color=INK, bbox=dict(facecolor="white", edgecolor="none", pad=1))   # 흰 배경: 목표선과 겹쳐도 읽히게
 a.set_xticks(range(len(ov))); a.set_xticklabels(ov.index, rotation=35, ha="right", fontsize=8.5)
 a.set_ylim(0, 105); a.set_ylabel("%"); a.spines[["top", "right"]].set_visible(False); a.grid(axis="y", alpha=.25)
 a.set_title("그림 2. 10 ~ 90% 예상 범위 적중률 — 80%에 가까울수록 범위가 정확함", fontsize=11)

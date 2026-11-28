@@ -1,0 +1,17 @@
+﻿파운데이션 모델,비교 대상,시계열 수,승,패,Wilcoxon p (FM이 더 좋음)
+TimesFM 2.5,HistQuantile,17,11,6,0.142082
+TimesFM 2.5,Naive,17,8,9,0.444984
+TimesFM 2.5,3개월 평균,17,10,7,0.273834
+TimesFM 2.5,SeasonalNaive,17,11,6,0.013336
+Chronos-2,HistQuantile,17,10,7,0.153023
+Chronos-2,Naive,17,6,11,0.726166
+Chronos-2,3개월 평균,17,10,7,0.229286
+Chronos-2,SeasonalNaive,17,11,6,0.028442
+Moirai 2.0,HistQuantile,17,8,9,0.78466
+Moirai 2.0,Naive,17,8,9,0.644051
+Moirai 2.0,3개월 평균,17,6,11,0.811089
+Moirai 2.0,SeasonalNaive,17,11,6,0.049187
+FinCast,HistQuantile,17,6,9,0.633364
+FinCast,Naive,17,7,7,0.681117
+FinCast,3개월 평균,17,7,9,0.581931
+FinCast,SeasonalNaive,17,11,6,0.103447
