@@ -1,7 +1,7 @@
-"""1단계: 파운데이션 모델 4종 + Baseline 8가지 결과 비교 → results/comparison_*.csv
+"""1단계: 파운데이션 모델 4종 + Baseline 4종 결과 비교 (모두 직접 방식: 한 번에 6개월) → results/comparison_*.csv
 실행: python scripts/1_compare.py   (results/<모델>/ALL_*.csv 필요)
 
-  comparison_overall.csv    모델별 종합 (카테고리 6개 기준 MAE 합계 · MASE · WQL · 적중률 + 전체 시계열 + 최악 배율)
+  comparison_overall.csv    모델(× 방식)별 종합 (카테고리 6개 기준 MAE 합계 · MASE · WQL · 적중률 + 전체 시계열 + 최악 배율)
   comparison_by_user.csv    모델 × 사용자별 MAE · MASE · WQL · 적중률 (카테고리 '종합')
   comparison_by_series.csv  모델 × 시계열(사용자 × 카테고리)별 MASE
   comparison_tests.csv      FM × Baseline 1:1 비교 (시계열별 MASE 승-패, Wilcoxon 부호순위 단측 p)
@@ -16,16 +16,15 @@ from scipy.stats import wilcoxon
 ROOT = Path(__file__).resolve().parents[1]
 RES = ROOT / "results"
 DIRS = ["timesfm", "chronos", "moirai", "fincast", "baseline"]
-NAME = {"timesfm(재귀)": "TimesFM 2.5", "chronos(재귀)": "Chronos-2", "moirai(재귀)": "Moirai 2.0", "fincast(재귀)": "FinCast",
-        "baseline(재귀)": "HistQuantile 재귀", "baseline(직접)": "HistQuantile 직접", "naive(재귀)": "Naive 재귀",
-        "naive(직접)": "Naive 직접", "snaive(재귀)": "SeasonalNaive 재귀", "snaive(직접)": "SeasonalNaive 직접",
-        "ma3(재귀)": "3개월 평균 재귀", "ma3(직접)": "3개월 평균 직접"}
+NAME = {"timesfm(직접)": "TimesFM 2.5", "chronos(직접)": "Chronos-2", "moirai(직접)": "Moirai 2.0", "fincast(직접)": "FinCast",
+        "baseline(직접)": "HistQuantile", "naive(직접)": "Naive", "snaive(직접)": "SeasonalNaive", "ma3(직접)": "3개월 평균"}   # 직접 방식만 사용
 FM = ["TimesFM 2.5", "Chronos-2", "Moirai 2.0", "FinCast"]
 
 
 def load(kind):
     d = pd.concat([pd.read_csv(RES / k / f"ALL_{kind}_{k}.csv") for k in DIRS if (RES / k / f"ALL_{kind}_{k}.csv").exists()],
                   ignore_index=True)
+    d = d[d["모델"].isin(NAME)].copy()              # 직접 방식 결과만
     d["모델"] = d["모델"].map(NAME)
     return d
 
@@ -57,7 +56,7 @@ ser[ov.index].round(6).to_csv(RES / "comparison_by_series.csv", encoding="utf-8-
 s = ser.dropna()
 rows = []
 for f in FM:
-    for b in ["HistQuantile 재귀", "HistQuantile 직접", "Naive 직접", "3개월 평균 직접"]:
+    for b in ["HistQuantile", "Naive", "3개월 평균", "SeasonalNaive"]:
         d = s[f] - s[b]
         rows.append({"파운데이션 모델": f, "비교 대상": b, "시계열 수": len(d), "승": int((d < 0).sum()), "패": int((d > 0).sum()),
                      "Wilcoxon p (FM이 더 좋음)": wilcoxon(d, alternative="less").pvalue})

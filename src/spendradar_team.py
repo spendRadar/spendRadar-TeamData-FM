@@ -1,7 +1,7 @@
 """SpendRadar 팀원 지출 데이터 평가 공통 함수 (Baseline 레포·FM 레포 공통).
 
   1) 데이터 로드        load_team()   data/team_monthly_long.csv → 사용자별 월간 지출 (카테고리 6개 + 전체)
-  2) 예측              forecast()    직접(한 번에 6개월) / 재귀(1개월씩 6번, 샘플 경로로 불확실성 누적)
+  2) 예측              forecast()    직접 예측: 입력 기간 전체를 보고 6개월을 한 번에
   3) 검증 + 향후 예측   evaluate()    마지막 6개월(test)을 가리고 맞혀 MAE·MASE·WQL 계산 + 향후 6개월 예측
   4) Baseline 4종      BASELINES     HistQuantile · Naive · SeasonalNaive · 3개월 평균
 
@@ -68,69 +68,26 @@ def _make_base(kind):
     return f
 
 
-# 내부 이름 "baseline" = HistQuantile (결과 파일의 모델 열: baseline(직접), naive(재귀) …)
+# 내부 이름 "baseline" = HistQuantile (결과 파일의 모델 열: baseline(직접), naive(직접) …)
 BASELINES = {k: _make_base(k) for k in ["baseline", "naive", "snaive", "ma3"]}
 
 
 # ---------------------------------------------------------------- 예측
-N_PATHS = 200    # 재귀 예측 샘플 경로 수 (층화 샘플링 기준 200개면 시드에 따른 MAE 차이 0.2% 이내)
-SEED = 0         # 샘플링 난수 시드 (같은 값이면 같은 결과)
-
-
-def _draw(qv, u):
-    """1개월 예측 분포(분위수 0.1 ~ 0.9)에서 확률 u에 해당하는 값 (역분포 샘플링, 행마다 1개)
-    분위수 사이는 선형 보간, 양 끝 10%는 가장 가까운 구간의 기울기로 연장, 지출이라 0 미만은 0"""
-    lv = np.array(Q)
-    j = np.clip(np.searchsorted(lv, u) - 1, 0, len(Q) - 2)
-    r = np.arange(len(qv))
-    x0, x1 = qv[r, j], qv[r, j + 1]
-    return np.maximum(x0 + (u - lv[j]) / 0.1 * (x1 - x0), 0)
-
-
-def forecast(pred, ctxs, h, strategy="recursive", chunk=1, n_paths=None, seed=None):
-    """direct    : 한 번에 h개월 예측
-    recursive : 샘플 경로 재귀 — 1개월 예측 분포에서 경로마다 값을 하나씩 뽑아(층화 샘플링) 그 경로의 과거 뒤에 붙임 → h번 반복
-                → 경로 N_PATHS개의 월별 분포에서 분위수 계산. 앞 달의 불확실성이 다음 달 입력에 들어가 누적됨
-    recursive_median : (이전 방식, 비교용) 1개월 예측의 중앙값만 붙임 → 각 달 범위는 그 한 달의 불확실성만 반영
-    전 기간 0원인 카테고리는 모델에 넣지 않고 0원 예측, 음수는 0으로 자르고 분위수는 크기순 정렬"""
-    def f(cs, k):
-        live = [i for i, c in enumerate(cs) if np.any(np.asarray(c) != 0)]
-        res = {q: np.zeros((len(cs), k)) for q in Q}
-        if live:
-            p = pred([cs[i] for i in live], k)
-            for q in Q: res[q][live] = np.asarray(p[q])[:, :k]
-        a = np.sort(np.stack([np.maximum(res[q], 0) for q in Q]), axis=0)
-        return {q: a[j] for j, q in enumerate(Q)}
-    if strategy == "direct":
-        return f(ctxs, h)
-    if strategy == "recursive_median":
-        cs = [np.asarray(c, dtype=np.float32).copy() for c in ctxs]
-        out = {q: np.zeros((len(cs), h)) for q in Q}; done = 0
-        while done < h:
-            k = min(chunk, h - done); p = f(cs, k)
-            for q in Q: out[q][:, done:done + k] = p[q][:, :k]
-            cs = [np.concatenate([c, p[0.5][i, :k].astype(np.float32)]) for i, c in enumerate(cs)]
-            done += k
-        return out
-    # recursive (샘플 경로): 시계열 S개 × 경로 N_PATHS개를 한 번에 모델에 넣음
-    N = N_PATHS if n_paths is None else n_paths
-    rng = np.random.default_rng(SEED if seed is None else seed)
-    S = len(ctxs)
-    paths = [np.asarray(c, dtype=np.float32) for c in ctxs for _ in range(N)]
-    sims = np.zeros((S, N, h))
-    for t in range(h):
-        p = f(paths, 1)
-        # 층화 샘플링: 시계열마다 경로 N개에 확률 구간 [0,1)을 N등분해 하나씩 배정 (무작위 순서) → 적은 경로로도 결과가 안정적
-        u = ((rng.permuted(np.tile(np.arange(N), (S, 1)), axis=1) + rng.random((S, N))) / N).ravel()
-        x = _draw(np.stack([p[q][:, 0] for q in Q], axis=1), u)
-        sims[:, :, t] = x.reshape(S, N)
-        paths = [np.concatenate([c, np.float32([v])]) for c, v in zip(paths, x)]
-    return {q: np.quantile(sims, q, axis=1) for q in Q}
+def forecast(pred, ctxs, h):
+    """직접 예측: 입력 기간 전체를 보고 h개월을 한 번에 예측 → {분위수 q: (시계열 수, h)}
+    전 기간 0원인 시계열은 모델에 넣지 않고 0원 예측, 음수는 0으로 자르고 분위수는 크기순 정렬"""
+    live = [i for i, c in enumerate(ctxs) if np.any(np.asarray(c) != 0)]
+    res = {q: np.zeros((len(ctxs), h)) for q in Q}
+    if live:
+        p = pred([np.asarray(ctxs[i], dtype=np.float32) for i in live], h)
+        for q in Q: res[q][live] = np.asarray(p[q])[:, :h]
+    a = np.sort(np.stack([np.maximum(res[q], 0) for q in Q]), axis=0)
+    return {q: a[j] for j, q in enumerate(Q)}
 
 
 # ---------------------------------------------------------------- 검증 + 향후 예측
-def evaluate(pred, d, strategy="recursive"):
-    """사용자 한 명: 검증(test) 지표 met · 향후 6개월 예측 fc · 검증 실제 vs 예측 val
+def evaluate(pred, d):
+    """사용자 한 명: 검증(test) 지표 met · 향후 6개월 예측 fc · 검증 실제 vs 예측 val (직접 예측)
     시계열 = 카테고리 6개 + 전체(합계), 각각 따로 예측
     MAE  = 월 평균 |실제 − 예측 중앙값| (원/월)
     MASE = MAE ÷ 입력 구간 '지난달 값' 예측의 평균 오차 (lag 1)
@@ -142,7 +99,7 @@ def evaluate(pred, d, strategy="recursive"):
     ctxs = [series[c][series[c].index < t0].values for c in SERIES]
     actual = np.stack([series[c][tm].values for c in SERIES]).astype(float)
     nz = [c for c in SERIES if monthly[c].sum() > 0]
-    P = forecast(pred, ctxs, HORIZON, strategy)
+    P = forecast(pred, ctxs, HORIZON)
     rows, pin_all, y_all = [], 0.0, 0.0
     for i, c in enumerate(SERIES):
         y, med = actual[i], P[0.5][i]
@@ -163,7 +120,7 @@ def evaluate(pred, d, strategy="recursive"):
                       "WQL": 2 * pin_all / y_all, "예상범위 적중률": cat["예상범위 적중률"].mean()}
     # 향후 6개월 (전체 기간을 입력으로)
     fut = pd.period_range(pd.Period(d["end"], "M") + 1, periods=HORIZON, freq="M")
-    F = forecast(pred, [series[c].values for c in SERIES], HORIZON, strategy)
+    F = forecast(pred, [series[c].values for c in SERIES], HORIZON)
     fc = pd.DataFrame([{"카테고리": c, "월": str(m), "예측": round(F[0.5][i, h]),
                         "하한(10%)": round(F[0.1][i, h]), "상한(90%)": round(F[0.9][i, h])}
                        for i, c in enumerate(SERIES) for h, m in enumerate(fut)])

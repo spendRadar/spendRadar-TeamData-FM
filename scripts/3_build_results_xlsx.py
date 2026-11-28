@@ -10,10 +10,8 @@ from openpyxl.utils import get_column_letter
 ROOT = Path(__file__).resolve().parents[1]
 RES = ROOT / "results"
 DIRS = ["timesfm", "chronos", "moirai", "fincast", "baseline"]
-NAME = {"timesfm(재귀)": "TimesFM 2.5", "chronos(재귀)": "Chronos-2", "moirai(재귀)": "Moirai 2.0", "fincast(재귀)": "FinCast",
-        "baseline(재귀)": "HistQuantile 재귀", "baseline(직접)": "HistQuantile 직접", "naive(재귀)": "Naive 재귀",
-        "naive(직접)": "Naive 직접", "snaive(재귀)": "SeasonalNaive 재귀", "snaive(직접)": "SeasonalNaive 직접",
-        "ma3(재귀)": "3개월 평균 재귀", "ma3(직접)": "3개월 평균 직접"}
+NAME = {"timesfm(직접)": "TimesFM 2.5", "chronos(직접)": "Chronos-2", "moirai(직접)": "Moirai 2.0", "fincast(직접)": "FinCast",
+        "baseline(직접)": "HistQuantile", "naive(직접)": "Naive", "snaive(직접)": "SeasonalNaive", "ma3(직접)": "3개월 평균"}   # 직접 방식만 사용
 SERIES = ['식비 / 카페', '주거 / 통신', '쇼핑 / 패션', '교통 / 차량', '문화 / 여가', '의료', '전체', '종합']
 ov = pd.read_csv(RES / "comparison_overall.csv")
 ORDER = list(ov["모델"])
@@ -21,6 +19,7 @@ ORDER = list(ov["모델"])
 
 def load(kind):
     d = pd.concat([pd.read_csv(RES / k / f"ALL_{kind}_{k}.csv") for k in DIRS], ignore_index=True)
+    d = d[d["모델"].isin(NAME)].copy()              # 직접 방식 결과만
     d["모델"] = d["모델"].map(NAME)
     key = {"모델": {m: i for i, m in enumerate(ORDER)}, "카테고리": {c: i for i, c in enumerate(SERIES)}}
     cols = [c for c in ["모델", "사용자", "카테고리", "월"] if c in d]
@@ -29,9 +28,9 @@ def load(kind):
 
 M, F, V = load("metrics"), load("forecast"), load("validation")
 info = pd.DataFrame({"항목": ["내용", "데이터", "검증", "향후 예측", "지표", "종합 행", "출처"], "설명": [
-    "SpendRadar 팀원 지출 데이터 — 파운데이션 모델 4종(TimesFM 2.5 · Chronos-2 · Moirai 2.0 · FinCast) + Baseline 4종(직접 · 재귀) 결과",
+    "SpendRadar 팀원 지출 데이터 — 파운데이션 모델 4종(TimesFM 2.5 · Chronos-2 · Moirai 2.0 · FinCast) + Baseline 4종, 모두 직접 방식(한 번에 6개월) 결과",
     "팀원 3명(U1 · U2 · U4) × 카테고리 6개 + 전체(합계). 포함 조건 · 전처리는 spendRadar-TeamData-Baseline README",
-    "2026-05 ~ 2026-10(6개월)을 가리고 이전 데이터로 예측. 재귀 = 1개월 예측 분포에서 샘플 경로 200개로 6개월 불확실성 누적",
+    "2026-05 ~ 2026-10(6개월)을 가리고 이전 데이터로 6개월을 한 번에 예측(직접 방식)",
     "2026-11 ~ 2027-04, 예측 = 중앙값, 하한 · 상한 = 10% · 90% 분위수",
     "MAE = 월 평균 오차(원), MASE = 지난달 값 예측 대비 오차(1 미만이면 더 정확), WQL = 분위수 예측 품질 — 모두 낮을수록 좋음",
     "카테고리 '종합' = 카테고리 6개 기준 사용자 종합 (MAE 합, MASE · 적중률 평균, WQL 합쳐서 계산), '전체' = 월 총지출 시계열",
